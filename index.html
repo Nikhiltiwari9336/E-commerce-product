@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product-container {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 60%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-description {
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2e8b57;
+  margin: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #2e8b57;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #238f4d;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-image">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gettyimages.in%2Fphotos%2Fwireless-headphones&psig=AOvVaw09qECJsPvQFsZ_qXjFLtwL&ust=1739717203224000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPC8z-P1xYsDFQAAAAAdAAAAABAE" height="200px" width="300px" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Awesome Wireless Headphones</h1>
+            <p class="product-description">
+                Experience high-quality sound with these noise-canceling wireless headphones. Perfect for music lovers and commuters alike.
+            </p>
+            <p class="product-price">$199.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
